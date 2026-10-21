@@ -1,0 +1,40 @@
+:root{
+  --bg:#05070C; --bg2:#121826; --kart:#141b2b; --kenar:rgba(255,255,255,.08);
+  --yazi:#EEF2F8; --soluk:#9AA6BA; --vurgu:#2EC7BD;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; min-height:100vh; color:var(--yazi);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(1200px 700px at 30% -10%,#1E2638 0%,var(--bg) 60%) fixed,var(--bg);
+}
+a{color:var(--vurgu);text-decoration:none}
+a:hover{text-decoration:underline}
+.kap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:36px}
+.marka{display:flex;align-items:center;gap:12px;color:var(--yazi);font-weight:700;font-size:20px}
+.marka:hover{text-decoration:none}
+.marka svg{width:40px;height:40px;border-radius:10px;flex:none}
+.dil{display:flex;background:var(--kart);border:1px solid var(--kenar);border-radius:999px;padding:3px}
+.dil button{all:unset;cursor:pointer;padding:6px 12px;border-radius:999px;font-size:14px;color:var(--soluk)}
+.dil button[aria-pressed="true"]{background:var(--vurgu);color:#04110F;font-weight:600}
+h1{font-size:34px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:21px;margin:36px 0 10px;letter-spacing:-.01em}
+h3{font-size:17px;margin:22px 0 6px}
+p,li{color:#D5DCE7}
+.alt{color:var(--soluk);margin:0 0 28px}
+.kart{background:var(--kart);border:1px solid var(--kenar);border-radius:18px;padding:20px 22px;margin:18px 0}
+.ozet{border-left:3px solid var(--vurgu)}
+ul{padding-left:22px}
+.izgara{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:28px}
+.izgara a.kart{display:block;margin:0;color:var(--yazi);transition:transform .15s,border-color .15s}
+.izgara a.kart:hover{text-decoration:none;transform:translateY(-2px);border-color:rgba(46,199,189,.5)}
+.izgara a.kart strong{display:block;font-size:17px;margin-bottom:4px}
+.izgara a.kart span{color:var(--soluk);font-size:15px}
+.posta{display:inline-block;margin-top:6px;padding:10px 16px;border-radius:12px;background:var(--vurgu);color:#04110F;font-weight:600}
+.posta:hover{text-decoration:none;filter:brightness(1.08)}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--kenar);color:var(--soluk);font-size:14px}
+[lang]:not(html)[hidden]{display:none}
+@media (max-width:520px){h1{font-size:28px}}
